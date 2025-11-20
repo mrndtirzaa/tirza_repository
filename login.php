@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'includes/config.php';
 
 $error = '';
@@ -8,8 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
     
     if ($username === ADMIN_USERNAME && $password === ADMIN_PASSWORD) {
-        $_SESSION['admin_logged_in'] = true;
+
+        // SET SESSION ADMIN
+        $_SESSION['admin'] = true;
         $_SESSION['admin_username'] = $username;
+
         header('Location: admin/dashboard.php');
         exit;
     } else {
@@ -18,11 +22,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // Redirect jika sudah login
-if (isLoggedIn()) {
+if (isset($_SESSION['admin'])) {
     header('Location: admin/dashboard.php');
     exit;
 }
 ?>
+    
 <!DOCTYPE html>
 <html lang="id">
 <head>
