@@ -106,8 +106,6 @@ $thisWeekSchedules = getThisWeekSchedules($schedules);
                     <a href="user/events.php" class="text-gray-700 hover:text-blue-600 transition">Event</a>
                     <a href="about.php" class="text-gray-700 hover:text-blue-600 transition">Tentang</a>
                     <a href="contact.php" class="text-gray-700 hover:text-blue-600 transition">Kontak</a>
-                    <a href="login.php" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                        <i class="fas fa-user-shield mr-2"></i>Admin
                     </a>
                 </div>
                 
