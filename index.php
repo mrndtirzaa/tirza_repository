@@ -115,7 +115,8 @@ $thisWeekSchedules = getThisWeekSchedules($schedules);
                 </button>
             </div>
             
-            <!-- Mobile Menu -->
+    
+                        <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
                 <a href="index.php" class="block py-2 text-blue-600 font-semibold">Beranda</a>
                 <a href="user/schedule.php" class="block py-2 text-gray-700 hover:text-blue-600">Jadwal</a>
@@ -123,12 +124,8 @@ $thisWeekSchedules = getThisWeekSchedules($schedules);
                 <a href="user/events.php" class="block py-2 text-gray-700 hover:text-blue-600">Event</a>
                 <a href="about.php" class="block py-2 text-gray-700 hover:text-blue-600">Tentang</a>
                 <a href="contact.php" class="block py-2 text-gray-700 hover:text-blue-600">Kontak</a>
-                <a href="login.php" class="block py-2 text-blue-600 font-semibold">
-                    <i class="fas fa-user-shield mr-2"></i>Admin Login
-                </a>
             </div>
-        </div>
-    </nav>
+
     
     <!-- Hero Section -->
     <section class="animate-gradient text-white pt-32 pb-20 px-6">
